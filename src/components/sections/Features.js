@@ -45,8 +45,8 @@ const UsedBy = () => (
           <div>
             <h1 align="center">Features</h1>
             <LogoGrid>
-              {LOGOS.map(({ feature, link }) => (
-                <div
+              {LOGOS.map(({ feature, i }) => (
+                <div key={i}
                   style={{
                     border: 'lightgray solid 0.5px',
                     borderRadius: '10px',
