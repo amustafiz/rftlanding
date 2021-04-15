@@ -58,6 +58,7 @@ const Header = () => (
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
   padding-top: 96px;
+  padding-bottom: 40px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 128px;
@@ -86,16 +87,17 @@ const Grid = styled.div`
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
-    grid-gap: 0px;
+    grid-gap: 80px;
 
     > ${Art} {
       order: -1;
+      margin: -60px 0 0 -20px;
     }
   }
 `;
 
 const Text = styled.div`
-  justify-self: center;
+  justify-self: flex-end;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: center;
